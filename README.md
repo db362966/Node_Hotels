@@ -53,7 +53,7 @@ Node_Hotels/
 
 5. Start the server:
 
-npm start
+ npm start
 
 ---
 
@@ -84,6 +84,28 @@ Staff Routes
 
 ---
 
+📋 Prerequisites
+
+Make sure you have the following installed before running the project:
+
+- Node.js
+- npm (comes with Node.js)
+- MongoDB (local or MongoDB Atlas)
+
+You can download Node.js from: https://nodejs.org/
+
+---
+
+🌐 Live Demo
+
+You can access the live API here:
+
+👉 https://your-deployed-link.com
+
+No installation required.
+
+---
+
 🤝 Contributing
 
 Feel free to fork this repository and contribute.
@@ -93,3 +115,6 @@ Feel free to fork this repository and contribute.
 👨‍💻 Author
 
 Deepak Bisht
+
+
+
