@@ -1,7 +1,7 @@
+require('dotenv').config();
 const express = require("express");
 const app = express();
 const db = require('./db');
-require('dotenv').config();
 const passport = require('./auth');
 const bodyParser = require('body-parser');
 app.use(bodyParser.json());//request.body me data store karega
@@ -26,7 +26,7 @@ app.get('/' ,function (req, res)  {
 const personRoutes = require('./routes/personRoutes');
 const menuItemsRoutes = require('./routes/menuItemRoutes');
 //use the routers
-app.use('/person',localAuthMiddleware, personRoutes);
+app.use('/person', personRoutes);
 app.use('/menu', menuItemsRoutes);
 
 
