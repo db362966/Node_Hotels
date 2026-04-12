@@ -49,7 +49,7 @@ Node_Hotels/
 4. Create a ".env" file and add:
 
  PORT=5000
- MONGO_URI=your_mongodb_connection_string
+ MONGODB_URL=your_mongodb_connection_string
 
 5. Start the server:
 
