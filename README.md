@@ -1,6 +1,7 @@
 🍽️ Node Hotels (Menu & Staff Management API)
 
-A backend project built with Node.js and Express for managing restaurant menu items and staff information. This project provides RESTful APIs to perform CRUD operations on menu and staff data.
+A backend project built with Node.js and Express.js for managing restaurant menu items and staff information.
+This project provides RESTful APIs to perform CRUD operations on menu and staff data, along with secure authentication using JWT and bcrypt.
 
 ---
 
@@ -8,9 +9,13 @@ A backend project built with Node.js and Express for managing restaurant menu it
 
 - 🍔 Manage menu items (Add, update, delete, view)
 - 👨‍🍳 Manage staff/person data
+- 🔐 User authentication (Signup & Login using JWT)
+- 🔑 Protected routes using token-based authentication
+- 🔒 Password hashing using bcrypt
 - 🔄 RESTful API structure
 - 🗄️ MongoDB database integration
 - ⚡ Lightweight and scalable backend
+- 🌐 Deployed on Render (Live API available)
 
 ---
 
@@ -20,101 +25,128 @@ A backend project built with Node.js and Express for managing restaurant menu it
 - Express.js
 - MongoDB
 - Mongoose
+- JSON Web Token (JWT)
+- bcrypt
 
 ---
 
 📂 Project Structure
 
 Node_Hotels/
-│── models/        # Mongoose schemas (Menu, Person)
-│── routes/        # API routes
-│── main_server.js      # Main server file
+│── models/          # Mongoose schemas (Menu, Person)
+│── routes/          # API routes
+│── main_server.js   # Main server entry point
 
 ---
 
-⚙️ Installation
+⚙️ Installation & Setup
 
-1. Clone the repository:
+1️⃣ Clone the repository
 
- git clone https://github.com/db362966/Node_Hotels.git
+git clone https://github.com/db362966/Node_Hotels.git
 
-2. Navigate to project folder:
+2️⃣ Navigate to project folder
 
- cd Node_Hotels
+cd Node_Hotels
 
-3. Install dependencies:
+3️⃣ Install dependencies
 
- npm install
+npm install
 
-4. Create a ".env" file and add:
+4️⃣ Create a ".env" file
 
- PORT=5000
- MONGODB_URL=your_mongodb_connection_string
+Add the following environment variables:
 
-5. Start the server:
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_secret_key
 
- npm start
+5️⃣ Start the server
 
----
-
-📡 API Endpoints (Example)
-
-Menu Routes
-
-- GET /menu → Get all menu items
-- POST /menu → Add new item
-- PUT /menu/:id → Update item
-- DELETE /menu/:id → Delete item
-
-Staff Routes
-
-- GET /person → Get all staff
-- POST /person → Add staff
-- PUT /person/:id → Update staff
-- DELETE /person/:id → Delete staff
+npm start
 
 ---
 
-📈 Future Improvements
+🔐 Authentication
 
-- Authentication system 🔐
-- Admin dashboard 📊
-- Image upload for menu items 🖼️
-- Frontend integration (React)
+This project uses JWT (JSON Web Token) and bcrypt for secure authentication.
+
+🧾 Auth Routes
+
+- "POST /signup" → Register a new user (password hashed using bcrypt)
+- "POST /login" → Login user and receive JWT token
+
+🔑 How it works
+
+- User password is hashed using bcrypt before storing in database
+- On login, password is verified using bcrypt
+- A JWT token is generated after successful authentication
+- The token must be included in headers for protected routes
+
+Example:
+
+Authorization: Bearer <your_token>
 
 ---
 
-📋 Prerequisites
+📡 API Endpoints
 
-Make sure you have the following installed before running the project:
+🍔 Menu Routes
 
-- Node.js
-- npm (comes with Node.js)
-- MongoDB (local or MongoDB Atlas)
+- "GET /menu" → Get all menu items
+- "POST /menu" → Add new item (Protected)
+- "PUT /menu/:id" → Update item (Protected)
+- "DELETE /menu/:id" → Delete item (Protected)
 
-You can download Node.js from: https://nodejs.org/
+👨‍🍳 Staff Routes
+
+- "GET /person" → Get all staff
+- "POST /person" → Add staff (Protected)
+- "PUT /person/:id" → Update staff (Protected)
+- "DELETE /person/:id" → Delete staff (Protected)
 
 ---
 
 🌐 Live Demo
 
-You can access the live API here:
+🚀 Live API is available here:
 
-👉 https://your-deployed-link.com
+👉 https://hotel-mw65.onrender.com
 
-No installation required.
+Example Endpoint:
+
+GET https://hotel-mw65.onrender.com/menu
+
+---
+
+📋 Prerequisites
+
+Make sure you have the following installed:
+
+- Node.js
+- npm (comes with Node.js)
+- MongoDB (local or MongoDB Atlas)
+
+🔗 Download Node.js: https://nodejs.org/
+
+---
+
+📈 Future Improvements
+
+- 📊 Admin dashboard
+- 🖼️ Image upload for menu items
+- ⚛️ Frontend integration (React)
+- 🔐 Role-based access (Admin/User)
 
 ---
 
 🤝 Contributing
 
 Feel free to fork this repository and contribute.
+Pull requests are welcome!
 
 ---
 
 👨‍💻 Author
 
 Deepak Bisht
-
-
-
