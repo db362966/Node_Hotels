@@ -33,9 +33,18 @@ This project provides RESTful APIs to perform CRUD operations on menu and staff 
 📂 Project Structure
 
 Node_Hotels/
-│── models/          # Mongoose schemas (Menu, Person)
-│── routes/          # API routes
-│── main_server.js   # Main server entry point
+│── node_modules/        # Installed dependencies
+│── models/              # Mongoose schemas (Menu, Person)
+│── routes/              # API routes (menuRoutes, personRoutes)
+│── .env                 # Environment variables
+│── .gitignore           # Ignored files
+│── auth.js              # Authentication middleware (route protection)
+│── jwt.js               # JWT logic (token generation & verification)
+│── db.js                # MongoDB connection setup
+│── main_server.js       # Main server entry point
+│── package.json         # Project metadata & dependencies
+│── package-lock.json    # Dependency lock file
+│── README.md            # Project documentation
 
 ---
 
