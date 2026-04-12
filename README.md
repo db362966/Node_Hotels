@@ -58,7 +58,7 @@ npm install
 Add the following environment variables:
 
 PORT=5000
-MONGO_URI=your_mongodb_connection_string
+MONGODB_URL=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
 
 5️⃣ Start the server
