@@ -1,6 +1,6 @@
 🍽️ Node Hotels (Menu & Staff Management API)
 
-A backend project built with Node.js and Express.js for managing restaurant menu items and staff information.
+A API's based backend project built with Node.js and Express.js for managing restaurant menu items and staff information.
 This project provides RESTful APIs to perform CRUD operations on menu and staff data, along with secure authentication using JWT and bcrypt.
 
 ---
