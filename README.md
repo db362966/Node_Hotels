@@ -1,6 +1,6 @@
 🍽️ Node Hotels (Menu & Staff Management API)
 
-A API's based backend project built with Node.js and Express.js for managing restaurant menu items and staff information.
+A REST APIs based backend project built with Node.js and Express.js for managing restaurant menu items and staff information.
 This project provides RESTful APIs to perform CRUD operations on menu and staff data, along with secure authentication using JWT and bcrypt.
 
 ---
@@ -52,7 +52,7 @@ Node_Hotels/
 
 1️⃣ Clone the repository
 
-git clone https://github.com/db362966/Node_Hotels.git
+git clone https://github.com/DeepakBisht-19/Node_Hotels.git
 
 2️⃣ Navigate to project folder
 
@@ -145,7 +145,7 @@ Make sure you have the following installed:
 - 📊 Admin dashboard
 - 🖼️ Image upload for menu items
 - ⚛️ Frontend integration (React)
-- 🔐 Role-based access (Admin/User)
+- 🔐 Role-based access
 
 ---
 
